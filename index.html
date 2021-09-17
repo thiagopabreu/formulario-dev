@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+    <title>Formulário</title>
+</head>
+<body>
+
+    <div class="title">
+        <h1 id="title">Formulário de Cadastro</h1>
+        <p id="subtitle">Insira suas informações</p>
+    </div>
+
+    <form class="form">
+        <fieldset class="grupo">
+            <div class="field">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="name" required>
+            </div>
+
+            <div class="field">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="last-name" required>
+            </div>
+
+            <div class="field">
+                <label for="idade">Idade</label>
+                <input type="date" name="idade" id="idade" required>
+            </div>
+
+            <div class="field">
+                <label for="masc">
+                    <input type="radio" name="masc" id="masc">Masculino
+                    <input type="radio" name="masc" id="femn">Feminino
+                    <input type="radio" name="masc" id="no-gender">Não-Binário
+                </label>
+            </div>
+
+            <div class="field">
+                <label for="email">email</label>
+                <input type="email" name="email" id="email">
+            </div>
+
+        </fieldset>
+
+        <p>Selecione as tecnologias nas areas especificas:</p>
+
+        <div class="end">
+            <label for="front-end-text">Front-end:</label>
+            <br>
+            <label>
+                <input type="checkbox" name="front-end-text" id="html">Html
+            </label>
+            <label>
+                <input type="checkbox" name="front-end-text" id="css">CSS
+            </label>
+            <label>
+                <input type="checkbox" name="front-end-text" id="javascript">Javascript
+            </label>
+            <label>
+                <input type="checkbox" name="front-end-text" id="bootstrap">Bootstrap
+            </label>
+            <label>
+                <input type="checkbox" name="front-end-text" id="reactjs">ReactJS
+            </label>
+            <label>
+                <input type="checkbox" name="front-end-text" id="vuejs">VueJS
+            </label>
+            <label>
+                <input type="checkbox" name="front-end-text" id="angular">Angular
+            </label>
+        </div>
+
+        <div class="end">
+            <label for="back-end-text">Back-end:</label>
+            <br>
+            <label>
+                <input type="checkbox" name="back-end-text" id="c#">C#
+            </label>
+            <label>
+                <input type="checkbox" name="back-end-text" id="java">Java
+            </label>
+            <label>
+                <input type="checkbox" name="back-end-text" id="python">Python
+            </label>
+            <label>
+                <input type="checkbox" name="back-end-text" id="php">PHP
+            </label>
+            <label>
+                <input type="checkbox" name="back-end-text" id="nodejs">NodeJS
+            </label>
+            <label>
+                <input type="checkbox" name="back-end-text" id="ruby">Ruby
+            </label>
+            <label>
+                <input type="checkbox" name="back-end-text" id="dotnet">.NET
+            </label>
+        </div>
+        
+        <div>
+            <label for="senioridade">Senioridade</label>
+            <select name="senioridade" id="senioridade">
+                <option value="senioridade">Estagiario</option>
+                <option value="senioridade">Junior</option>
+                <option value="senioridade">Pleno</option>
+                <option value="senioridade">Senior</option>
+            </select>
+        </div>
+
+        <div class="about-box">
+            <label for="about-box">Conte um pouco sobre sua experiencia</label>
+            <textarea name="about-box" id="about-field" cols="30" rows="10"></textarea>
+        </div>
+
+        <button class="bt" type="submit">Enviar</button>
+
+    </form>
+    
+</body>
+</html>
